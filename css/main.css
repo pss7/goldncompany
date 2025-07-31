@@ -2,6 +2,10 @@
 
 #mainWrap{overflow-x: hidden;}
 
+.slick-dots{margin-top: 25px; display: flex!important; gap: 0 10px; align-items: center; justify-content: center; width: 100%;}
+.slick-dots li.slick-active button{background: #FF680D;}
+.slick-dots li button{width: 7px; height: 7px; text-indent: -9999px; border-radius: 50%; background-color: #000; cursor: pointer;}
+
 /* 비주얼영역 */
 #visualWrap{padding: 120px 20px 20px; height: 100vh; }
 #visualWrap .slick-list{border-radius: 20px; overflow: hidden;}
@@ -109,59 +113,65 @@
 
 @media (max-width: 480px){
 
-    #videoWrap{padding: 50px 0 30px;}
+  #videoWrap .video{height: 410px;}
+  #videoWrap{padding: 50px 0 30px;}
 
 }
 
 /* 뉴스 영역 */
 #newsWrap{padding: 60px 0;}
 #newsWrap .newsList{border-top: 1px solid #000;}
-#newsWrap .newsList li{border-bottom: 1px solid #ccc;}
-#newsWrap .newsList li a{position: relative; padding: 50px 516px 50px 0; display: flex; align-items: center; gap: 0 0;}
-#newsWrap .newsList li a:hover p{text-decoration: underline;}
-#newsWrap .newsList li a em{flex-shrink: 0; margin-right: 104px; font-size: 18px; font-weight: 500; color: #000;}
-#newsWrap .newsList li a .box{overflow: hidden;}
-#newsWrap .newsList li a .box p{margin-bottom: 10px; color: #000; font-weight: 600; font-size: 26px; overflow: hidden; white-space: nowrap; text-overflow: ellipsis;}
-#newsWrap .newsList li a .box .date{display: block; color: #999;}
-#newsWrap .newsList li a .imgBox{position: absolute; top: 50%; transform: translateY(-50%); }
-#newsWrap .newsList li a .imgBox img{display: block; width: 100%; height: 100%; object-fit: cover;}
-#newsWrap .newsList li:nth-child(1) a .imgBox{right: 31px; width: 429px; height: 286px; z-index: 1;}
-#newsWrap .newsList li:nth-child(2) a .imgBox{right: -144px; width: 464px; height: 244px; z-index: 2;}
-#newsWrap .newsList li:nth-child(3) a .imgBox{right: -41px; width: 452px; height: 241px; z-index: 3;}
+#newsWrap .newsList .newsBox{border-bottom: 1px solid #ccc;}
+#newsWrap .newsList .newsBox a{position: relative; padding: 50px 516px 50px 0; display: flex; align-items: center; gap: 0 0;}
+#newsWrap .newsList .newsBox a:hover p{text-decoration: underline;}
+#newsWrap .newsList .newsBox a em{flex-shrink: 0; margin-right: 104px; font-size: 18px; font-weight: 500; color: #000;}
+#newsWrap .newsList .newsBox a .box{overflow: hidden;}
+#newsWrap .newsList .newsBox a .box p{margin-bottom: 10px; color: #000; font-weight: 600; font-size: 26px; overflow: hidden; white-space: nowrap; text-overflow: ellipsis;}
+#newsWrap .newsList .newsBox a .box .date{display: block; color: #999;}
+#newsWrap .newsList .newsBox a .imgBox{position: absolute; top: 50%; transform: translateY(-50%); }
+#newsWrap .newsList .newsBox a .imgBox img{display: block; width: 100%; height: 100%; object-fit: cover;}
+#newsWrap .newsList .newsBox:nth-child(1) a .imgBox{right: 31px; width: 429px; height: 286px; z-index: 1;}
+#newsWrap .newsList .newsBox:nth-child(2) a .imgBox{right: -144px; width: 464px; height: 244px; z-index: 2;}
+#newsWrap .newsList .newsBox:nth-child(3) a .imgBox{right: -41px; width: 452px; height: 241px; z-index: 3;}
 
 @media (max-width: 1199px){
 
-  #newsWrap .newsList li a .imgBox{position: static; transform: none; margin-bottom: 20px; width: 100%!important; height: auto!important;}
-  #newsWrap .newsList li a{padding: 30px 0; flex-direction: column; align-items: center; gap: 0 0;}
-  #newsWrap .newsList li a em{margin: 0 0 15px;}
-  #newsWrap .newsList li a .box{width: 100%; text-align: center;}
+  #newsWrap .newsList .newsBox a .imgBox{position: static; transform: none; margin-bottom: 20px; width: 100%!important; height: auto!important;}
+  #newsWrap .newsList .newsBox a{padding: 30px 0; flex-direction: column; align-items: center; gap: 0 0;}
+  #newsWrap .newsList .newsBox a em{margin: 0 0 15px;}
+  #newsWrap .newsList .newsBox a .box{width: 100%; text-align: center;}
   
 }
 
 @media (max-width: 1024px){
 
-  #newsWrap .newsList li a{padding: 20px 0;}
-  #newsWrap .newsList li a .box p{font-size: 24px}
+  #newsWrap .newsList .newsBox a{padding: 20px 0;}
+  #newsWrap .newsList .newsBox a .box p{font-size: 24px}
 
 }
 
 @media (max-width: 767px){
 
-  #newsWrap .newsList li a .box p{font-size: 20px}
+  #newsWrap{padding: 60px 0 50px;}
+  #newsWrap .newsList{margin: 0 -10px;}
+  #newsWrap .newsList .newsBox{margin: 0 10px;}
+  #newsWrap .newsList .newsBox a .box p{font-size: 20px}
+  #newsWrap .newsList .newsBox a .imgBox{position: relative; right: auto!important; height: 0; padding-top: 50%; border-radius: 10px; overflow: hidden;}
+  #newsWrap .newsList .newsBox a .imgBox img{position: absolute; left:0; right:0; bottom: 0; top:0;}
 
 }
 
 @media (max-width: 480px){
 
-  #newsWrap .newsList li a .box p{font-size: 18px}
+  #newsWrap .newsList .newsBox a .box p{font-size: 18px}
 
 }
 
 /* 후기 영역 */
 #reviewWrap{padding: 60px 0 120px;}
 #reviewWrap .reviewList{display: flex; gap: 0 20px;}
-#reviewWrap .reviewList li a{display: block;}
-#reviewWrap .reviewList li a img{display: block; width: 100%;}
+#reviewWrap .reviewList .reviewBox a{display: block;}
+#reviewWrap .reviewList .reviewBox a img{display: block; width: 100%;}
 
 @media (max-width: 1024px){
 
@@ -169,8 +179,10 @@
 
 }
 
-@media (max-width: 1024px){
+@media (max-width: 767px){
 
+  #reviewWrap .reviewList{margin: 0 -10px;}
+  #reviewWrap .reviewList .reviewBox{margin: 0 10px;}
   #reviewWrap{padding: 30px 0 60px;}
 
 }
@@ -179,7 +191,7 @@
 #globalCompanyWrap{position: relative; padding: 90px 0; background-color: #F7F7F7; z-index: 1; overflow: hidden;}
 #globalCompanyWrap::before{content: ''; width: 550px; height: 618px; position: absolute; left:0; bottom: 0; background: url(../images/main/bg01.svg)no-repeat center; z-index:-1;}
 #globalCompanyWrap::after{content: ''; width: 546px; height: 618px; position: absolute; right:0; top: 0; background: url(../images/main/bg02.svg)no-repeat center; z-index:-1;}
-#globalCompanyWrap h3{margin-bottom: 16px; text-align: center; font-size: 40px; font-weight: 600; color: #000; line-height: 1.3;}
+#globalCompanyWrap h3{margin-bottom: 16px; text-align: center; font-size: 40px; font-weight: 600; color: #000; line-height: 1.3; word-break: keep-all;}
 #globalCompanyWrap p{margin-bottom: 40px; font-size: 18px; color: #000; text-align: center;}
 #globalCompanyWrap .globalCompanyList{display: flex; justify-content: center;}
 #globalCompanyWrap .globalCompanyList li{display: flex; flex-direction: column; align-items: center; justify-content: center; width: 249px; height: 249px; border-radius: 50%; background-color: #fff;}
@@ -228,33 +240,32 @@
 #advantageWrap .advantageList{position: relative; display: flex; flex-wrap: wrap; gap: 20px;}
 #advantageWrap .advantageList::after{content: ''; width: 304px; height: 356px; position: absolute; top:-169px; right:-141px; background: url(../images/main/bg05.svg)no-repeat center;}
 #advantageWrap .advantageList::before{width: 247px; height: 287px; content: ''; position: absolute; left:-105px; bottom: -116px; background: url(../images/main/bg06.svg)no-repeat center;}
-#advantageWrap .advantageList li{ flex: 1 1 auto; position: relative; width: 393px; height: 360px; border-radius: 15px; overflow: hidden; z-index: 1;}
-#advantageWrap .advantageList li::after{content: ''; position: absolute; top:0; left:0; right: 0; bottom: 0; background: url(../images/main/bg03.svg)no-repeat center; background-size: cover; z-index: -1;}
-#advantageWrap .advantageList li .textBox{position: absolute; left:30px; right: 20px; bottom: 30px;}
-#advantageWrap .advantageList li .textBox h4{margin-bottom: 10px; font-size: 26px; font-weight: 700; color: #fff;}
-#advantageWrap .advantageList li .textBox p{font-weight: 600; color: #C3C2C0;}
-#advantageWrap .advantageList li:nth-child(1){background: url(../images/main/advantage_img01.svg)no-repeat center; background-size:cover;}
-#advantageWrap .advantageList li:nth-child(2){background: url(../images/main/advantage_img02.svg)no-repeat center; background-size:cover; }
-#advantageWrap .advantageList li:nth-child(3){background: url(../images/main/advantage_img03.svg)no-repeat center; background-size:cover; }
-#advantageWrap .advantageList li:nth-child(4){background: url(../images/main/advantage_img04.svg)no-repeat center; background-size:cover; }
-#advantageWrap .advantageList li:nth-child(5){background: url(../images/main/advantage_img05.svg)no-repeat center; background-size:cover; }
+#advantageWrap .advantageList .advantageBox{ flex: 1 1 auto; position: relative; width: 393px; height: 360px; border-radius: 15px; overflow: hidden; z-index: 1;}
+#advantageWrap .advantageList .advantageBox::after{content: ''; position: absolute; top:0; left:0; right: 0; bottom: 0; background: url(../images/main/bg03.svg)no-repeat center; background-size: cover; z-index: 9;}
+#advantageWrap .advantageList .advantageBox .textBox{position: absolute; left:30px; right: 20px; bottom: 30px; z-index: 99;}
+#advantageWrap .advantageList .advantageBox .textBox h4{margin-bottom: 10px; font-size: 26px; font-weight: 700; color: #fff;}
+#advantageWrap .advantageList .advantageBox .textBox p{font-weight: 600; color: #C3C2C0;}
+#advantageWrap .advantageList .advantageBox .imgBox{position: absolute; top:0; left:0; right:0; bottom: 0;}
+#advantageWrap .advantageList .advantageBox .imgBox img{display: block; width: 100%; height: 100%; object-fit: cover;}
 
 @media (max-width: 1024px){
 
-  #advantageWrap .advantageList li .textBox h4{font-size: 24px;}
+  #advantageWrap .advantageList .advantageBox .textBox h4{font-size: 24px;}
 
 }
 
 @media (max-width: 767px){
 
   #advantageWrap{padding: 80px 0 60px;}
-  #advantageWrap .advantageList li .textBox h4{font-size: 22px;}
+  #advantageWrap .advantageList{margin: 0 -10px;}
+  #advantageWrap .advantageList .advantageBox{margin: 0 10px}
+  #advantageWrap .advantageList .advantageBox .textBox h4{font-size: 22px;}
   
 }
 
 @media (max-width: 414px){
 
-  #advantageWrap .advantageList li{height: 312px;}
+  #advantageWrap .advantageList .advantageBox{height: 312px;}
 
 }
 

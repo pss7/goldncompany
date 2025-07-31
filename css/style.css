@@ -64,10 +64,16 @@
   #headerWrap .mobileMenuBox .menuBox{display: block;}
   #headerWrap .mobileBtn{display: block; position: absolute; top:50%; transform: translateY(-50%); right: 20px;}
   #headerWrap .mobileBtn img{display: block;}
-  #headerWrap .mobileMenuBox{display: block; max-width: 360px; width: 100%; padding: 40px 0 0; position: fixed; top:0; right:-3000px; bottom: 0; background-color: #fff; z-index: 99999;}
-  #headerWrap .mobileMenuBox nav .menu{flex-direction: column; align-items: flex-start;}
-  #headerWrap .mobileMenuBox nav .menu li{width: 100%;}
-  #headerWrap .mobileMenuBox nav .menu li h2 a{padding: 15px 20px 15px 25px; font-size: 18px;}
+  #headerWrap .mobileMenuBox{display: block; max-width: 304px; width: 100%; padding: 40px 0 0; position: fixed; top:0; right:0; bottom: 0; background-color: #fff; z-index: 99999;}
+  #headerWrap .mobileMenuBox .linkBox a{position: relative; display: block; padding: 10px 20px 10px 25px; font-size: 15px; font-weight: 500;}
+  #headerWrap .mobileMenuBox .linkBox a::after {content: ''; position: absolute;
+    top: 50%; transform: translateY(-50%); right: 20px; width: 6px; height: 6px;
+    border-top: 1px solid #222; border-right: 1px solid #222; transform: translateY(-50%) rotate(45deg);
+  }
+  #headerWrap .mobileMenuBox nav .menu{position: relative; flex-wrap: wrap; padding-bottom: 25px; margin-bottom: 25px;}
+  #headerWrap .mobileMenuBox nav .menu::after{content: ''; position: absolute; left:20px; right: 20px; bottom: 0; height: 1px; background-color: #ddd;}
+  #headerWrap .mobileMenuBox nav .menu li{width: 50%;}
+  #headerWrap .mobileMenuBox nav .menu li h2 a{padding: 10px 20px 10px 25px; font-size: 15px; font-weight: 500;}
   #headerWrap .mobileMenuBox .logoBox{margin:0 0 25px 25px;}
   #headerWrap .mobileMenuBox .logoBox h1 a{display: inline-block; padding: 0;}
   #headerWrap .mobileMenuBox .loginBox{padding: 0 25px; margin-top: 30px;justify-content: center;}
