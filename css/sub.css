@@ -1,0 +1,202 @@
+@charset "UTF-8";
+#wrap{height: 100%;}
+#subWrap{margin-top: 120px; min-height: 100%;}
+
+@media (max-width: 1199px){
+
+  #subWrap{margin-top: 81px;}
+
+}
+.subTitleBox{margin-bottom: 120px; padding: 0 20px;}
+.subTitleBox .subVisualBox{position: relative; display: flex; align-items: center; justify-content: center; height: 500px; border-radius: 20px; overflow: hidden; z-index: 1;}
+.subTitleBox .subVisualBox.companyIntroduceImg::before{background: url(../images/sub/sub_bg01.svg)no-repeat center; background-size: cover; transform: scale(2);}
+.subTitleBox .subVisualBox::before{content: ''; position: absolute; top:0; left:0; right:0; bottom: 0;  z-index: 1; transition: all 7s;}
+.subTitleBox .subVisualBox.active::before{transform: scale(1);}
+.subTitleBox .subVisualBox::after{content: ''; position: absolute; top:0; left:0; right:0; bottom: 0; background-color: rgba(0,0,0,.5); z-index: 1;}
+.subTitleBox .subVisualBox .titleBox{position: relative; text-align: center; z-index: 9;}
+.subTitleBox .subVisualBox .titleBox span{display: block; margin-bottom: 25px; color: #A4ADB2;}
+.subTitleBox .subVisualBox .titleBox h2{font-size: 48px; font-weight: 700; color: #fff;}
+
+@media (max-width: 1199px){
+
+  .subTitleBox .subVisualBox .titleBox h2{font-size: 40px;}
+
+}
+
+@media (max-width: 1024px){
+
+  .subTitleBox .subVisualBox{height: 420px; border-radius: 10px;}
+  .subTitleBox .subVisualBox .titleBox h2{font-size: 36px;}
+
+}
+
+@media (max-width: 767px){
+
+  .subTitleBox{margin-bottom: 60px;}
+  .subTitleBox .subVisualBox{height: 370px;}
+  .subTitleBox .subVisualBox .titleBox h2{font-size: 28px;}
+
+}
+
+@media (max-width: 414px){
+
+  .subTitleBox .subVisualBox{height: 300px;}
+  .subTitleBox .subVisualBox .titleBox h2{font-size: 24px;}
+
+}
+
+/* 회사소개 */
+.companyIntroduceBox .revenueBox{padding: 0 0 60px;}
+.companyIntroduceBox .revenueBox h3{margin-bottom: 40px; color: #000; font-size: 40px; font-weight: 600; text-align: center; letter-spacing: -1px;}
+.companyIntroduceBox .revenueBox  .revenueList{display: flex; flex-wrap: wrap; gap: 20px 1.5%; }
+.companyIntroduceBox .revenueBox  .revenueList li{width: 49.2%;}
+.companyIntroduceBox .revenueBox  .revenueList li {padding: 30px 20px 36px; border-radius: 15px; overflow: hidden; background-color: #F2F3F7;}
+.companyIntroduceBox .revenueBox  .revenueList li span{display: block; margin-bottom: 10px; font-size: 15px; font-weight: 600; color: #FF680D; text-align: center;}
+.companyIntroduceBox .revenueBox  .revenueList li h4{margin-bottom: 10px; font-size: 26px; font-weight: 700; text-align: center;}
+.companyIntroduceBox .revenueBox  .revenueList li p{text-align: center; font-weight: 600; color: #000;}
+.companyIntroduceBox .coreValueBox{padding: 60px 0;}
+.companyIntroduceBox .coreValueList{display: flex; flex-wrap: wrap; align-items: center; justify-content: center;}
+.companyIntroduceBox .coreValueList li{display: flex; align-items: center; justify-content: center; width: 305px; height: 305px; border-radius: 50%; border: 1px solid#FF680D;}
+.companyIntroduceBox .coreValueList li .box h4{position: relative; margin-bottom: 10px; font-size: 22px; font-weight: 700; color: #000; text-align: center;}
+.companyIntroduceBox .coreValueList li .box h4::before{top: -12px; width: 6px; height: 6px; content: ''; position: absolute; left: 50%; margin-left: -3px; border-radius: 50%; background-color: #FF680D;}
+.companyIntroduceBox .coreValueList li .box p{text-align: center; font-weight: 600; color: #000;}
+.companyIntroduceBox .aboutBox{padding: 90px 0; background-color: #F9F9F9;}
+.companyIntroduceBox .aboutBox .tit{margin-bottom: 40px;}
+.companyIntroduceBox .aboutBox .box{margin-bottom: 35px;}
+.companyIntroduceBox .aboutBox h5{margin-bottom: 10px; font-size: 70px; color: #FF680D; text-align: center;}
+.companyIntroduceBox .aboutBox .aboutTextList li{margin-bottom: 10px; display: flex; gap: 0 9px; justify-content: center; font-size: 20px; font-weight: 600; color: #000; }
+.companyIntroduceBox .aboutBox .aboutTextList li:last-child{margin-bottom: 0;}
+.companyIntroduceBox .aboutBox .aboutTextList li::before{margin-top: 9px; content: ''; width: 17px; height: 13px; background: url(../images/sub/chk_icon.svg)no-repeat center;}
+.companyIntroduceBox .topTitleBox{max-width: 1260px; margin:0 auto 75px; padding: 90px 0; position: relative;}
+.companyIntroduceBox .topTitleBox::after{content: ''; width: 322px; height: 350px; position: absolute; top:50%; right:0; transform: translateY(-50%); background: url(../images/sub/img01.png)no-repeat center; background-size: contain; z-index: -1;}
+.companyIntroduceBox .topTitleBox .title{margin-bottom: 10px; font-weight: 700; font-size: 36px; line-height: 1.3;}
+.companyIntroduceBox .topTitleBox .subTitle{font-size: 20px; font-weight: 500; color: #000;}
+.companyIntroduceBox .topTitleBox .subTitle strong{color: #FF680D;}
+.companyIntroduceBox .companyIntroduceList{display: flex; align-items: flex-start; flex-wrap: wrap; gap: 20px 2%;}
+.companyIntroduceBox .companyIntroduceList .box{position: relative; padding: 39px 20px 197px 27px; border-radius: 20px; z-index: 1;}
+.companyIntroduceBox .companyIntroduceList .box.active{height: auto; padding: 39px 20px 150px 27px;}
+.companyIntroduceBox .companyIntroduceList .box .textBox{margin-top: 30px; display: none;}
+.companyIntroduceBox .companyIntroduceList .box .textBox h4{font-size: 22px;}
+.companyIntroduceBox .companyIntroduceList .box .textView{position: absolute; left:27px; bottom: 20px; width: 35px; height: 35px; background-color: #fff; border-radius: 50px; transition: all .5s;}
+.companyIntroduceBox .companyIntroduceList .box .textView.active{transform: rotate(-180deg);}
+.companyIntroduceBox .companyIntroduceList .box .textView::after{content: ''; width: 16px; height: 18px; position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); background: url(../images/sub/arrow_icon01.png)no-repeat center;}
+
+.companyIntroduceBox .companyIntroduceList .box::after{content: ''; position: absolute; bottom: 20px; right:20px; z-index: -1;}
+.companyIntroduceBox .companyIntroduceList .box h3{margin-bottom: 20px; color: #000; font-size: 32px; font-weight: 700;}
+.companyIntroduceBox .companyIntroduceList .box p{font-size: 20px; color: #010101;}
+.companyIntroduceBox .companyIntroduceListBox{padding: 0 0 90px;}
+.companyIntroduceBox .companyIntroduceList{margin-bottom: 20px;}
+.companyIntroduceBox .companyIntroduceList01 .box,
+.companyIntroduceBox .companyIntroduceList03 .box{width: 49%;}
+.companyIntroduceBox .companyIntroduceList02 .box{width: 100%;}
+.companyIntroduceBox .companyIntroduceList01 .box:nth-child(1){background-color: #eee9ff;}
+.companyIntroduceBox .companyIntroduceList01 .box:nth-child(1)::after{width: 200px; height: 200px; background: url(../images/sub/img02.png)no-repeat center; background-size: contain;}
+.companyIntroduceBox .companyIntroduceList01 .box:nth-child(2){background-color: #ffe3d5;}
+.companyIntroduceBox .companyIntroduceList01 .box:nth-child(2)::after{width: 200px; height: 200px; background: url(../images/sub/img03.png)no-repeat center; background-size: contain;}
+.companyIntroduceBox .companyIntroduceList02 .box:nth-child(1){background-color: #fef0e5;}
+.companyIntroduceBox .companyIntroduceList02 .box:nth-child(1)::after{right: 50px; width: 250px; height: 150px; background: url(../images/sub/img04.png)no-repeat center; background-size: contain;}
+.companyIntroduceBox .companyIntroduceList02 .box:nth-child(2){background-color: #ffeeee;}
+.companyIntroduceBox .companyIntroduceList02 .box:nth-child(2)::after{right: 50px; width: 250px; height: 150px; background: url(../images/sub/img05.png)no-repeat center; background-size: contain;}
+.companyIntroduceBox .companyIntroduceList03 .box:nth-child(1){background-color: #f5faff;}
+.companyIntroduceBox .companyIntroduceList03 .box:nth-child(1)::after{width: 180px; height: 180px; background: url(../images/sub/img06.png)no-repeat center; background-size: contain;}
+.companyIntroduceBox .companyIntroduceList03 .box:nth-child(2){background-color: #fff9ed;}
+.companyIntroduceBox .companyIntroduceList03 .box:nth-child(2)::after{width: 200px; height: 200px; background: url(../images/sub/img07.png)no-repeat center; background-size: contain;}
+.companyIntroduceBox .companyIntroduceList03 .box:nth-child(3){background-color: #ecfffd;}
+.companyIntroduceBox .companyIntroduceList03 .box:nth-child(3)::after{width: 180px; height: 180px; background: url(../images/sub/img08.png)no-repeat center; background-size: contain;}
+.companyIntroduceBox .companyIntroduceList03 .box:nth-child(4){background-color: #fdf5ff;}
+.companyIntroduceBox .companyIntroduceList03 .box:nth-child(4)::after{width: 200px; height: 200px; background: url(../images/sub/img09.png)no-repeat center; background-size: contain;}
+
+@media (max-width: 1199px){
+
+  .companyIntroduceBox .revenueBox .revenueList li h4{font-size: 22px;}  
+  .companyIntroduceBox .revenueBox h3{font-size: 36px;}
+
+}
+
+@media (max-width: 1024px){
+
+  .companyIntroduceBox .revenueBox h3{font-size: 30px;}
+  .companyIntroduceBox .aboutBox h5{font-size: 50px;}
+  .companyIntroduceBox .topTitleBox .title{font-size: 32px;}
+
+  .companyIntroduceBox .companyIntroduceList .box h3{margin-bottom: 5px; font-size: 26px;}
+  .companyIntroduceBox .companyIntroduceList .box p{font-size: 18px;}
+
+  .companyIntroduceBox .companyIntroduceList01 .box:nth-child(1)::after{width: 170px; height: 170px;}
+  .companyIntroduceBox .companyIntroduceList01 .box:nth-child(2)::after{width: 170px; height: 170px;}
+  .companyIntroduceBox .companyIntroduceList02 .box:nth-child(1)::after{width: 220px; height: 120px;}
+  .companyIntroduceBox .companyIntroduceList02 .box:nth-child(2)::after{width: 220px; height: 120px;}
+  .companyIntroduceBox .companyIntroduceList03 .box:nth-child(1)::after{width: 150px; height: 150px;}
+  .companyIntroduceBox .companyIntroduceList03 .box:nth-child(2)::after{width: 170px; height: 170px;}
+  .companyIntroduceBox .companyIntroduceList03 .box:nth-child(3)::after{width: 150px; height: 150px;}
+  .companyIntroduceBox .companyIntroduceList03 .box:nth-child(4)::after{width: 170px; height: 170px;}
+
+}
+
+@media (max-width: 767px){
+
+  .companyIntroduceBox .revenueBox{padding: 0 0 40px;}
+  .companyIntroduceBox .coreValueBox{padding: 30px 0 60px;}
+  .companyIntroduceBox .aboutBox{padding: 70px 0;}
+  .companyIntroduceBox .revenueBox h3{font-size: 26px;}
+  .companyIntroduceBox .revenueBox .revenueList li{border-radius: 10px;}
+  .companyIntroduceBox .revenueBox .revenueList li h4{font-size: 20px;}  
+  .companyIntroduceBox .revenueBox .revenueList li{width: 100%;}
+  .companyIntroduceBox .coreValueList li{width: 250px; height: 250px;}
+  .companyIntroduceBox .aboutBox h5{font-size: 36px;}
+
+  .companyIntroduceBox .topTitleBox{padding: 60px 0;}
+  .companyIntroduceBox .topTitleBox .title{font-size: 26px;}
+  .companyIntroduceBox .topTitleBox .subTitle{font-size: 16px;}
+  .companyIntroduceBox .topTitleBox::after{width: 240px; height: 277px;}
+
+  .companyIntroduceBox .companyIntroduceList .box{padding: 25px 20px 100px; height: auto; width: 100%!important; border-radius: 10px;}
+  .companyIntroduceBox .companyIntroduceList .box h3{font-size: 22px;}
+  .companyIntroduceBox .companyIntroduceList .box p{font-size: 16px;}
+  
+
+  .companyIntroduceBox .companyIntroduceList01 .box:nth-child(1)::after{bottom: 0; width: 140px; height: 140px;}
+  .companyIntroduceBox .companyIntroduceList01 .box:nth-child(2)::after{bottom: 0; width: 140px; height: 140px;}
+  .companyIntroduceBox .companyIntroduceList02 .box:nth-child(1)::after{right: 0; width: 190px; height: 90px;}
+  .companyIntroduceBox .companyIntroduceList02 .box:nth-child(2)::after{right: 20px; width: 190px; height: 90px;}
+  .companyIntroduceBox .companyIntroduceList03 .box:nth-child(1)::after{width: 120px; height: 120px;}
+  .companyIntroduceBox .companyIntroduceList03 .box:nth-child(2)::after{bottom: 0; width: 140px; height: 140px;}
+  .companyIntroduceBox .companyIntroduceList03 .box:nth-child(3)::after{bottom: 0; width: 120px; height: 120px;}
+  .companyIntroduceBox .companyIntroduceList03 .box:nth-child(4)::after{bottom: 20px; width: 130px; height: 130px;}
+  
+}
+
+@media (max-width: 480px){
+
+  .companyIntroduceBox .topTitleBox{padding: 30px 0;}
+  .companyIntroduceBox .aboutBox h5{font-size: 28px;}
+  .companyIntroduceBox .topTitleBox{margin: 0 auto 28px;}
+  .companyIntroduceBox .topTitleBox .subTitle br{display: none;}
+  .companyIntroduceBox .topTitleBox .title{margin-top: 30px; font-size: 22px;}
+  .companyIntroduceBox .topTitleBox .subTitle{font-size: 15px;}
+  .companyIntroduceBox .topTitleBox::after{width: 166px; height: 195px; transform: translateY(-68%);}
+  .companyIntroduceBox .companyIntroduceList .box h3{font-size: 18px;}
+  .companyIntroduceBox .companyIntroduceList .box p{font-size: 15px;}
+
+  .companyIntroduceBox .companyIntroduceList01 .box:nth-child(1)::after{ width: 110px; height: 110px;}
+  .companyIntroduceBox .companyIntroduceList01 .box:nth-child(2)::after{ width: 110px; height: 110px;}
+  .companyIntroduceBox .companyIntroduceList02 .box:nth-child(1)::after{width: 160px; height: 50px;}
+  .companyIntroduceBox .companyIntroduceList02 .box:nth-child(2)::after{width: 160px; height: 50px;}
+  .companyIntroduceBox .companyIntroduceList03 .box:nth-child(1)::after{width: 90px; height: 90px;}
+  .companyIntroduceBox .companyIntroduceList03 .box:nth-child(2)::after{width: 110px; height: 110px;}
+  .companyIntroduceBox .companyIntroduceList03 .box:nth-child(3)::after{width: 90px; height: 90px;}
+  .companyIntroduceBox .companyIntroduceList03 .box:nth-child(4)::after{width: 100px; height: 100px;}
+  
+}
+
+@media (max-width: 414px){
+  
+  .companyIntroduceBox .companyIntroduceList .box{padding: 20px 20px 100px;}
+  .companyIntroduceBox .revenueBox h3{font-size: 22px;} 
+  .companyIntroduceBox .revenueBox .revenueList li p br{display: none;}
+  .companyIntroduceBox .topTitleBox .title{font-size: 20px;}
+  .companyIntroduceBox .topTitleBox .subTitle{font-size: 14px;}
+  .companyIntroduceBox .topTitleBox::after{width: 136px; height: 157px;}
+  .companyIntroduceBox .companyIntroduceList .box p br{display: none;}
+
+}
