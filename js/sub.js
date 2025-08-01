@@ -25,4 +25,22 @@ $(function () {
 
   });
 
+  /*
+  $(".reviewBox .slick").slick({
+    variableWidth: true,
+    autoplay: false,
+    arrows: false,
+    dots: false,
+    accessibility: false,
+    draggable: true,
+    infinite: false,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    zIndex: 1000,
+    pauseOnHover: false,
+    autoplaySpeed: 5000,
+    speed: 1500,
+  });
+  */
+
 });

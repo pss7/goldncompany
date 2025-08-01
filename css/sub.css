@@ -1,12 +1,20 @@
 @charset "UTF-8";
 #wrap{height: 100%;}
 #subWrap{margin-top: 120px; min-height: 100%;}
+.contentWrap{padding: 50px 0 100px; min-height: 500px;}
 
 @media (max-width: 1199px){
 
   #subWrap{margin-top: 81px;}
 
 }
+
+@media (max-width: 480px){
+
+  .contentWrap{padding: 25px 0 100px; min-height: 500px;}
+
+}
+
 .subTitleBox{margin-bottom: 120px; padding: 0 20px;}
 .subTitleBox .subVisualBox{position: relative; display: flex; align-items: center; justify-content: center; height: 500px; border-radius: 20px; overflow: hidden; z-index: 1;}
 .subTitleBox .subVisualBox.companyIntroduceImg::before{background: url(../images/sub/sub_bg01.svg)no-repeat center; background-size: cover; transform: scale(2);}
@@ -46,6 +54,7 @@
 }
 
 /* 회사소개 */
+.companyIntroduceBox{margin-top: -50px;}
 .companyIntroduceBox .revenueBox{padding: 0 0 60px;}
 .companyIntroduceBox .revenueBox h3{margin-bottom: 40px; color: #000; font-size: 40px; font-weight: 600; text-align: center; letter-spacing: -1px;}
 .companyIntroduceBox .revenueBox  .revenueList{display: flex; flex-wrap: wrap; gap: 20px 1.5%; }
@@ -200,3 +209,77 @@
   .companyIntroduceBox .companyIntroduceList .box p br{display: none;}
 
 }
+
+/* 후기 */
+.reviewBox h3{margin-bottom: 58px; color: #3981c2; font-size: 38px; font-family: 'GmarketSans';}
+.reviewBox h3 strong{color: #00bfff;}
+.reviewBox .rankingBox{margin-bottom: 100px;}
+.reviewBox .rankingBox .assetList{display: flex; gap: 0 19px;}
+.reviewBox .rankingBox .assetList .listBox{flex-shrink: 0; width: 290px;}
+.reviewBox .rankingBox .assetList .listBox h4{height: 50px; display: flex; align-items: center; justify-content: center; gap: 0 10px; font-size: 21px; color: #fff; font-weight: 700;   background: linear-gradient(to right, #515151, #262626);}
+.reviewBox .rankingBox .assetList .listBox h4::before{content: ''; width: 22px; height: 22px; background: url(../images/sub/icon11.png)no-repeat center;}
+.reviewBox .rankingBox .assetList .listBox .ratioWrap{display: flex; align-items: center; gap: 0 24px;}
+.reviewBox .rankingBox .assetList .listBox .ratioBox{width: 28px; height: 373px;}
+.reviewBox .rankingBox .assetList .listBox .ratioBox .ratio01{height: 5.7%; background-color: #dd6595;}
+.reviewBox .rankingBox .assetList .listBox .ratioBox .ratio02{height: 7.4%; background-color: #f0a17a;}
+.reviewBox .rankingBox .assetList .listBox .ratioBox .ratio03{height: 16.3%; background-color: #f4da8d;}
+.reviewBox .rankingBox .assetList .listBox .ratioBox .ratio04{height: 18.7%; background-color: #a8c279;}
+.reviewBox .rankingBox .assetList .listBox .ratioBox .ratio05{height: 13.8%; background-color: #299d90;}
+.reviewBox .rankingBox .assetList .listBox .ratioBox .ratio06{height: 38%; background-color: #287271;}
+.reviewBox .rankingBox .assetList .listBox .box{padding: 22px 20px 20px 20px; min-height: 450px; border: 1px solid #ddd; border-radius: 0 0 45px 25px; box-shadow: 0 10px 10px rgba(0,0,0,.1);}
+.reviewBox .rankingBox .assetList .listBox .ratioBox span{display: block;}
+.reviewBox .rankingBox .assetList .listBox .text{display: block; font-size: 14px; font-weight: 700; color: #829abf; text-align: right;}
+.reviewBox .rankingBox .ratioText li{margin-bottom: 7px;}
+.reviewBox .rankingBox .ratioText li span{display: block; font-weight: 500; font-size: 14px; color: #9598a0;}
+.reviewBox .rankingBox .ratioText li em{display: block; font-weight: 700; color: #3a3a3a;}
+.reviewBox .rankingBox .rankingList li{margin-bottom: 5px; display: flex; align-items: center;}
+.reviewBox .rankingBox .rankingList li img{flex-shrink: 0; margin-right: 12px;}
+.reviewBox .rankingBox .rankingList li .name{margin-top: 4px; flex-shrink: 0; margin-right: 74px; font-weight: 700; color: #444548; font-size: 14px;}
+.reviewBox .rankingBox .rankingList li .rankingText{flex-shrink: 0; width: 36px; font-weight: 700; color: #7b9cd9; text-align: center;}
+.reviewBox .rankingBox .rankingList li em{margin-top: 10px; flex-shrink: 0; font-size: 14px; font-weight: 700;}
+.reviewBox .rankingBox .rankingList li:nth-child(1) .name,
+.reviewBox .rankingBox .rankingList li:nth-child(2) .name,
+.reviewBox .rankingBox .rankingList li:nth-child(3) .name{margin-top: 14px;}
+.reviewBox .rankingBox .rankingList li:nth-child(1) em,
+.reviewBox .rankingBox .rankingList li:nth-child(2) em,
+.reviewBox .rankingBox .rankingList li:nth-child(3) em{color: #ff4a4e; }
+.reviewBox .rankingBox .slick-list{overflow: visible;}
+.reviewBox .youtubeList{display: flex; gap: 0 2%;}
+.reviewBox .youtubeList li{flex: 1;}
+.reviewBox .youtubeList li .videoBox{position: relative; margin-bottom: 20px; height: 0; padding-top: 60%; overflow: hidden; border-radius: 10px;}
+.reviewBox .youtubeList li .videoBox iframe{position: absolute; top:0; left:0; right:0; bottom: 0; width: 100%; height: 100%;}
+.reviewBox .youtubeList li h4{font-size: 20px; color: #333;}
+
+
+@media (max-width: 1199px){
+
+  .reviewBox .rankingBox .assetListBox{padding: 0 0 50px; overflow-x: auto;}
+  .reviewBox .rankingBox .assetListBox .assetList{width: 1257px; padding: 0 20px;}
+
+}
+
+@media (max-width: 1024px){
+
+  .reviewBox h3{margin-bottom: 40px; font-size: 30px;}
+  .reviewBox .youtubeList{flex-direction: column; gap: 50px 0;}
+  .reviewBox .youtubeList li .videoBox{margin-bottom: 15px;}
+  .reviewBox .youtubeList li h4{font-size: 18px;}
+
+}
+
+@media (max-width: 767px){
+
+  .reviewBox .rankingBox .assetList .listBox .box{border-radius: 0 0 10px 10px;}
+  .reviewBox .rankingBox .assetList .listBox h4{font-size: 16px;}
+  .reviewBox h3{margin-bottom: 40px; font-size: 26px;}
+
+}
+
+@media (max-width: 480px){
+
+
+  .reviewBox h3{font-size: 20px;}
+
+}
+
+
