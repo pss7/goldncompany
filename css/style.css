@@ -49,7 +49,7 @@
 
 }
 
-@media (min-width: 1199px){
+@media (min-width: 1200px){
 
   #headerWrap .bg{display: none!important;}
 
@@ -61,20 +61,20 @@
   #headerWrap .loginBox,
   #headerWrap .menuBox{display: none;}
   #headerWrap .mobileMenuBox .loginBox{display: flex;}
-  #headerWrap .mobileMenuBox .menuBox{display: block;}
+  #headerWrap .mobileMenuBox .menuBox{display: block; max-width: 320px; margin: 0 auto;} 
   #headerWrap .mobileBtn{display: block; position: absolute; top:50%; transform: translateY(-50%); right: 20px;}
   #headerWrap .mobileBtn img{display: block;}
-  #headerWrap .mobileMenuBox{display: block; max-width: 304px; width: 100%; padding: 40px 0 0; position: fixed; top:0; right:-3000px; bottom: 0; background-color: #fff; z-index: 99999;}
+  #headerWrap .mobileMenuBox{display: block; max-width: 360px; width: 100%; padding: 40px 0 0; position: fixed; top:0; right:-3000px; bottom: 0; background-color: #fff; z-index: 99999;}
   #headerWrap .mobileMenuBox .linkBox a{position: relative; display: block; padding: 10px 20px; font-size: 15px; font-weight: 500;}
   #headerWrap .mobileMenuBox .linkBox a::after {content: ''; position: absolute;
     top: 50%; transform: translateY(-50%); right: 20px; width: 6px; height: 6px;
     border-top: 1px solid #222; border-right: 1px solid #222; transform: translateY(-50%) rotate(45deg);
   }
   #headerWrap .mobileMenuBox nav .menu{position: relative; flex-wrap: wrap; padding-bottom: 25px; margin-bottom: 25px;}
-  #headerWrap .mobileMenuBox nav .menu::after{content: ''; position: absolute; left:20px; right: 20px; bottom: 0; height: 1px; background-color: #ddd;}
+  #headerWrap .mobileMenuBox nav .menu::after{content: ''; position: absolute; left:0; right: 0; bottom: 0; height: 1px; background-color: #ddd;}
   #headerWrap .mobileMenuBox nav .menu li{width: 50%;}
-  #headerWrap .mobileMenuBox nav .menu li h2 a{display: flex; align-items: center; gap: 0 10px; padding: 10px 0 10px 20px; font-size: 15px; font-weight: 500;}
-    #headerWrap .mobileMenuBox nav .menu li h2 a::before{content: ''; width: 20px; height: 20px; background-size: contain!important;}
+  #headerWrap .mobileMenuBox nav .menu li h2 a{display: flex; gap: 0 10px; padding: 10px 10px 10px 20px; font-size: 15px; font-weight: 500;}
+    #headerWrap .mobileMenuBox nav .menu li h2 a::before{flex-shrink: 0; content: ''; width: 20px; height: 20px; background-size: contain!important;}
   #headerWrap .mobileMenuBox nav .menu li:nth-child(1) h2 a::before{background: url(../images/common/icon01.svg)no-repeat center;}
   #headerWrap .mobileMenuBox nav .menu li:nth-child(2) h2 a::before{background: url(../images/common/icon02.svg)no-repeat center;}
   #headerWrap .mobileMenuBox nav .menu li:nth-child(3) h2 a::before{background: url(../images/common/icon03.svg)no-repeat center;}
@@ -98,6 +98,12 @@
  #headerWrap .mobileCloseBtn::before {transform: rotate(45deg);}
  #headerWrap .mobileCloseBtn::after {transform: rotate(-45deg);}
 
+}
+
+@media (max-width: 320px){
+
+  #headerWrap .mobileMenuBox .menuBox{max-width: 285px;}
+  
 }
 
 /* 푸터 */
