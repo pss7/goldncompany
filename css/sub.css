@@ -121,6 +121,30 @@
 .companyIntroduceBox .introduceList li{padding: 0 20px; position: relative; flex: 1; display: flex; align-items: center; justify-content: center; height: 300px; border-radius: 15px; background-color: #f9f9f9; text-align: center; box-shadow: 5px 5px 20px rgba(0, 0, 0, .1); word-break: keep-all;}
 .companyIntroduceBox .introduceList li p{font-size: 26px; font-weight: 700; color: #6d6d6d;}
 .companyIntroduceBox .introduceList li .number{position: absolute; top:-25px; left: 50%; transform: translateX(-50%); width: 50px; height: 50px; line-height: 50px; text-align: center; color: #fff; background-color: #FF680D; font-size: 18px; border-radius: 50%; font-weight: 700;}
+.companyIntroduceBox .historyBox{overflow: hidden;}
+.companyIntroduceBox .historyBox h3{margin-bottom: 46px; display: flex; align-items: center; justify-content: center; position: relative; height: 300px; font-size: 50px; font-weight: 800; color: #ff680d; z-index: 1;}
+.companyIntroduceBox .historyBox h3::after{content: ''; position: absolute; top:0; left:-100%; right:-100%; bottom: 0; z-index: -1; background: url(../images/sub/bg.jpg)no-repeat center; background-size: cover;}
+.companyIntroduceBox .historyBox h4{margin-bottom: 25px; color: #ff680d; font-size: 50px; font-weight: 800;}
+.companyIntroduceBox .historyBox .greetingsBox p{font-size: 25px; color: #2f2f2f; font-weight: 500; color: #2f2f2f;} 
+.companyIntroduceBox .historyBox .greetingsBox .signBox{margin-top: 40px; padding-top: 40px; position: relative; height: 175px; z-index: 1;}
+.companyIntroduceBox .historyBox .greetingsBox .signBox::after{content: ''; position: absolute; left: -100%; right: -100%; bottom: 0; top:0; background-color: #ff680d; z-index: -1;}
+.companyIntroduceBox .historyBox .greetingsBox .signBox .box{display: flex; align-items: center; gap: 0 13px;}
+.companyIntroduceBox .historyBox .greetingsBox .signBox span{font-size: 20px; color: #fff; font-weight: 500; }
+.companyIntroduceBox .historyBox .greetingsBox .signBox img{display: block;}
+.companyIntroduceBox .historyBox{margin-bottom: 90px;}
+.companyIntroduceBox .organizationChartBox h3{margin-bottom: 30px; font-size: 50px; font-weight: 800; color: #ff680d; border-radius: 20px;} 
+.companyIntroduceBox .organizationChartBox .organizationChart01 li{display: flex; flex-direction: column; align-items: center; justify-content: center;}
+.companyIntroduceBox .organizationChartBox .organizationChart01 li .box{margin-bottom: 46px; display: flex; align-items: center; justify-content: center; flex-direction: column; width: 300px; height: 90px; background-color: #ff680d; color: #fff; border-radius: 20px; box-shadow: 5px 5px 15px rgba(0, 0, 0, .3);}
+.companyIntroduceBox .organizationChartBox .organizationChart01 li .box span{font-size: 30px; color: #fff; font-weight: 600;}
+.companyIntroduceBox .organizationChartBox .organizationChart01 li .box em{font-size: 20px; color: #fff;}
+.companyIntroduceBox .organizationChartBox .organizationChart02{margin-bottom: 46px; display: flex; flex-wrap: wrap; justify-content: center; gap: 20px 40px;}
+.companyIntroduceBox .organizationChartBox .organizationChart02 li{width: 300px; height: 90px;  background-color: #ffd3b8; border-radius: 20px; box-shadow: 5px 5px 15px rgba(0, 0, 0, .2);}
+.companyIntroduceBox .organizationChartBox .organizationChart02 li span{font-weight: 600; font-size: 30px; color: #000; line-height: 1.3;}
+.companyIntroduceBox .organizationChartBox .organizationChart02 li em{font-size: 20px; color: #000; font-weight: 600;}
+.companyIntroduceBox .organizationChartBox .organizationChart03{display: flex; justify-content: center; flex-wrap: wrap; gap: 20px 20px;}
+.companyIntroduceBox .organizationChartBox .organizationChart03 li{width: 260px; height: 90px; background-color: #eee; border-radius: 20px; box-shadow: 5px 5px 15px rgba(0, 0, 0, .2);}
+.companyIntroduceBox .organizationChartBox .organizationChart03 li span{font-weight: 600; font-size: 30px; color: #000; line-height: 1.3;}
+.companyIntroduceBox .organizationChartBox .organizationChart03 li em{font-size: 20px; color: #000; font-weight: 600;}
 
 @media (max-width: 1199px){
 
@@ -153,6 +177,17 @@
   .companyIntroduceBox .introduceList li{height: 230px; border-radius: 10px;}
   .companyIntroduceBox .introduceList li p{font-size: 22px;}
 
+  .companyIntroduceBox .historyBox h3{height: 270px; font-size: 36px;}
+  .companyIntroduceBox .organizationChartBox h3,
+  .companyIntroduceBox .historyBox h4{font-size: 38px;}
+  .companyIntroduceBox .historyBox .greetingsBox p{font-size: 20px;}
+  .companyIntroduceBox .historyBox .greetingsBox .signBox span{font-size: 18px;}
+
+  .companyIntroduceBox .organizationChartBox .organizationChart01 li,
+  .companyIntroduceBox .organizationChartBox .organizationChart01 li .box{border-radius: 15px;}
+  .companyIntroduceBox .organizationChartBox .organizationChart01 li span{font-size: 24px!important;}
+  .companyIntroduceBox .organizationChartBox .organizationChart01 li em{font-size: 16px!important;}
+
 }
 
 @media (max-width: 767px){
@@ -176,7 +211,6 @@
   .companyIntroduceBox .companyIntroduceList .box h3{font-size: 22px;}
   .companyIntroduceBox .companyIntroduceList .box p{font-size: 16px;}
   
-
   .companyIntroduceBox .companyIntroduceList01 .box:nth-child(1)::after{bottom: 0; width: 140px; height: 140px;}
   .companyIntroduceBox .companyIntroduceList01 .box:nth-child(2)::after{bottom: 0; width: 140px; height: 140px;}
   .companyIntroduceBox .companyIntroduceList02 .box:nth-child(1)::after{right: 0; width: 190px; height: 90px;}
@@ -190,6 +224,20 @@
   .companyIntroduceBox .introduceList{flex-direction: column; gap: 60px 0;}
   .companyIntroduceBox .introduceList li{height: 200px; flex: auto; width: 100%;}
   .companyIntroduceBox .introduceList li p{font-size: 20px;}
+
+  .companyIntroduceBox .historyBox h3{height: 240px; font-size: 30px;}
+  .companyIntroduceBox .organizationChartBox h3,
+  .companyIntroduceBox .historyBox h4{font-size: 32px;}
+  .companyIntroduceBox .historyBox .greetingsBox p{font-size: 16px;}
+  .companyIntroduceBox .historyBox .greetingsBox .signBox span{font-size: 16px;}
+  .companyIntroduceBox .historyBox .greetingsBox .signBox{display: flex; align-items: center; padding: 0; height: 130px;}
+  .companyIntroduceBox .historyBox .greetingsBox .signBox img{width: 100px;}
+
+  .companyIntroduceBox .organizationChartBox .organizationChart01 li .box{width: 262px;}
+  .companyIntroduceBox .organizationChartBox .organizationChart02 li{width: 200px;}
+  .companyIntroduceBox .organizationChartBox .organizationChart03 li{width: 180px;}
+  .companyIntroduceBox .organizationChartBox .organizationChart01 li span{font-size: 20px!important;}
+  .companyIntroduceBox .organizationChartBox .organizationChart01 li em{font-size: 14px!important;}
 
 }
 
@@ -213,6 +261,22 @@
   .companyIntroduceBox .companyIntroduceList03 .box:nth-child(2)::after{width: 110px; height: 110px;}
   .companyIntroduceBox .companyIntroduceList03 .box:nth-child(3)::after{width: 90px; height: 90px;}
   .companyIntroduceBox .companyIntroduceList03 .box:nth-child(4)::after{width: 100px; height: 100px;}
+
+  .companyIntroduceBox .historyBox h3{height: 200px; font-size: 26px;}
+  .companyIntroduceBox .organizationChartBox h3,
+  .companyIntroduceBox .historyBox h4{font-size: 28px;}
+  .companyIntroduceBox .historyBox .greetingsBox p{font-size: 15px;}
+  .companyIntroduceBox .historyBox .greetingsBox .signBox span{font-size: 15px;}
+  .companyIntroduceBox .historyBox .greetingsBox .signBox{height: 110px;}
+  .companyIntroduceBox .historyBox .greetingsBox .signBox img{width: 80px;}
+
+  .companyIntroduceBox .organizationChartBox .organizationChart01 li,
+  .companyIntroduceBox .organizationChartBox .organizationChart01 li .box{border-radius: 10px;}
+  .companyIntroduceBox .organizationChartBox .organizationChart03{gap: 20px 5%}
+  .companyIntroduceBox .organizationChartBox .organizationChart03 li{width: 47.5%}
+  .companyIntroduceBox .organizationChartBox .organizationChart02 li{width: 100%;}
+  .companyIntroduceBox .organizationChartBox .organizationChart02{width: 100%; margin-bottom: 35px;}
+  .companyIntroduceBox .organizationChartBox .organizationChart01 li .box{margin-bottom: 38px; width: 100%;}
   
 }
 
@@ -225,12 +289,15 @@
   .companyIntroduceBox .topTitleBox .subTitle{font-size: 14px;}
   .companyIntroduceBox .topTitleBox::after{width: 136px; height: 157px;}
   .companyIntroduceBox .companyIntroduceList .box p br{display: none;}
+  
+  .companyIntroduceBox .historyBox{margin-bottom: 75px;}
+  .companyIntroduceBox .historyBox .greetingsBox .signBox .box{flex-direction: column; gap: 10px 0; align-items: center; width: 100%;}
 
 }
 
 /* 후기 */
-.reviewBox h3{margin-bottom: 58px; color: #3981c2; font-size: 38px; font-family: 'GmarketSans';}
-.reviewBox h3 strong{color: #00bfff;}
+.reviewBox h3{margin-bottom: 58px; font-size: 38px; font-family: 'GmarketSans';}
+.reviewBox h3 strong{color: #FF680D;}
 .reviewBox .rankingBox{margin-bottom: 100px;}
 .reviewBox .rankingBox .assetList{display: flex; gap: 0 19px;}
 .reviewBox .rankingBox .assetList .listBox{flex-shrink: 0; width: 290px;}
