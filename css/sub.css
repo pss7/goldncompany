@@ -114,11 +114,20 @@
 .companyIntroduceBox .companyIntroduceList03 .box:nth-child(3)::after{width: 180px; height: 180px; background: url(../images/sub/img08.png)no-repeat center; background-size: contain;}
 .companyIntroduceBox .companyIntroduceList03 .box:nth-child(4){background-color: #fdf5ff;}
 .companyIntroduceBox .companyIntroduceList03 .box:nth-child(4)::after{width: 200px; height: 200px; background: url(../images/sub/img09.png)no-repeat center; background-size: contain;}
+.companyIntroduceBox .introduceBox{padding: 100px 0;}
+.companyIntroduceBox .introduceBox h3{margin-bottom: 100px; text-align: center; font-family: 'GmarketSans'; font-size: 46px}
+.companyIntroduceBox .introduceBox h3 strong{color: #FF680D;}
+.companyIntroduceBox .introduceList{display: flex; gap: 0 4%;}
+.companyIntroduceBox .introduceList li{padding: 0 20px; position: relative; flex: 1; display: flex; align-items: center; justify-content: center; height: 300px; border-radius: 15px; background-color: #f9f9f9; text-align: center; box-shadow: 5px 5px 20px rgba(0, 0, 0, .1); word-break: keep-all;}
+.companyIntroduceBox .introduceList li p{font-size: 26px; font-weight: 700; color: #6d6d6d;}
+.companyIntroduceBox .introduceList li .number{position: absolute; top:-25px; left: 50%; transform: translateX(-50%); width: 50px; height: 50px; line-height: 50px; text-align: center; color: #fff; background-color: #FF680D; font-size: 18px; border-radius: 50%; font-weight: 700;}
 
 @media (max-width: 1199px){
 
   .companyIntroduceBox .revenueBox .revenueList li h4{font-size: 22px;}  
   .companyIntroduceBox .revenueBox h3{font-size: 36px;}
+  .companyIntroduceBox .introduceList li p{font-size: 24px;}
+  .companyIntroduceBox .introduceBox h3{font-size: 40px;}
 
 }
 
@@ -139,6 +148,10 @@
   .companyIntroduceBox .companyIntroduceList03 .box:nth-child(2)::after{width: 170px; height: 170px;}
   .companyIntroduceBox .companyIntroduceList03 .box:nth-child(3)::after{width: 150px; height: 150px;}
   .companyIntroduceBox .companyIntroduceList03 .box:nth-child(4)::after{width: 170px; height: 170px;}
+  
+  .companyIntroduceBox .introduceBox h3{font-size: 32px;}
+  .companyIntroduceBox .introduceList li{height: 230px; border-radius: 10px;}
+  .companyIntroduceBox .introduceList li p{font-size: 22px;}
 
 }
 
@@ -173,6 +186,11 @@
   .companyIntroduceBox .companyIntroduceList03 .box:nth-child(3)::after{bottom: 0; width: 120px; height: 120px;}
   .companyIntroduceBox .companyIntroduceList03 .box:nth-child(4)::after{bottom: 20px; width: 130px; height: 130px;}
   
+  .companyIntroduceBox .introduceBox h3{margin-bottom: 70px; font-size: 30px;}
+  .companyIntroduceBox .introduceList{flex-direction: column; gap: 60px 0;}
+  .companyIntroduceBox .introduceList li{height: 200px; flex: auto; width: 100%;}
+  .companyIntroduceBox .introduceList li p{font-size: 20px;}
+
 }
 
 @media (max-width: 480px){
