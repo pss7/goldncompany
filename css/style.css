@@ -107,7 +107,7 @@
 }
 
 /* 푸터 */
-#footerWrap{padding: 55px 0 0; background-color: #eee;}
+#footerWrap{padding: 55px 0 0; background-color: #eee; overflow: hidden;}
 #footerWrap .top{margin-bottom: 27px; display: flex; align-items: center; gap: 0 47px;}
 #footerWrap .footerLogoBox h1 img{display: block; width: 104px;}
 #footerWrap .footerLink{display: flex; align-items: center; gap: 0 30px;}
