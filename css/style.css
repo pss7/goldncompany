@@ -64,8 +64,8 @@
   #headerWrap .mobileMenuBox .menuBox{display: block;}
   #headerWrap .mobileBtn{display: block; position: absolute; top:50%; transform: translateY(-50%); right: 20px;}
   #headerWrap .mobileBtn img{display: block;}
-  #headerWrap .mobileMenuBox{display: block; max-width: 304px; width: 100%; padding: 40px 0 0; position: fixed; top:0; right:0; bottom: 0; background-color: #fff; z-index: 99999;}
-  #headerWrap .mobileMenuBox .linkBox a{position: relative; display: block; padding: 10px 20px 10px 25px; font-size: 15px; font-weight: 500;}
+  #headerWrap .mobileMenuBox{display: block; max-width: 304px; width: 100%; padding: 40px 0 0; position: fixed; top:0; right:-3000px; bottom: 0; background-color: #fff; z-index: 99999;}
+  #headerWrap .mobileMenuBox .linkBox a{position: relative; display: block; padding: 10px 20px; font-size: 15px; font-weight: 500;}
   #headerWrap .mobileMenuBox .linkBox a::after {content: ''; position: absolute;
     top: 50%; transform: translateY(-50%); right: 20px; width: 6px; height: 6px;
     border-top: 1px solid #222; border-right: 1px solid #222; transform: translateY(-50%) rotate(45deg);
@@ -73,7 +73,21 @@
   #headerWrap .mobileMenuBox nav .menu{position: relative; flex-wrap: wrap; padding-bottom: 25px; margin-bottom: 25px;}
   #headerWrap .mobileMenuBox nav .menu::after{content: ''; position: absolute; left:20px; right: 20px; bottom: 0; height: 1px; background-color: #ddd;}
   #headerWrap .mobileMenuBox nav .menu li{width: 50%;}
-  #headerWrap .mobileMenuBox nav .menu li h2 a{padding: 10px 20px 10px 25px; font-size: 15px; font-weight: 500;}
+  #headerWrap .mobileMenuBox nav .menu li h2 a{display: flex; align-items: center; gap: 0 10px; padding: 10px 0 10px 20px; font-size: 15px; font-weight: 500;}
+    #headerWrap .mobileMenuBox nav .menu li h2 a::before{content: ''; width: 20px; height: 20px; background-size: contain!important;}
+  #headerWrap .mobileMenuBox nav .menu li:nth-child(1) h2 a::before{background: url(../images/common/icon01.svg)no-repeat center;}
+  #headerWrap .mobileMenuBox nav .menu li:nth-child(2) h2 a::before{background: url(../images/common/icon02.svg)no-repeat center;}
+  #headerWrap .mobileMenuBox nav .menu li:nth-child(3) h2 a::before{background: url(../images/common/icon03.svg)no-repeat center;}
+  #headerWrap .mobileMenuBox nav .menu li:nth-child(4) h2 a::before{background: url(../images/common/icon04.svg)no-repeat center;}
+  #headerWrap .mobileMenuBox nav .menu li:nth-child(5) h2 a::before{background: url(../images/common/icon05.svg)no-repeat center;}
+  #headerWrap .mobileMenuBox nav .menu li:nth-child(6) h2 a::before{background: url(../images/common/icon06.svg)no-repeat center;}
+  #headerWrap .mobileMenuBox nav .menu li:nth-child(7) h2 a::before{background: url(../images/common/icon07.svg)no-repeat center;}
+  #headerWrap .mobileMenuBox nav .menu li:nth-child(8) h2 a::before{background: url(../images/common/icon08.svg)no-repeat center;}
+  #headerWrap .mobileMenuBox nav .menu li:nth-child(9) h2 a::before{background: url(../images/common/icon09.svg)no-repeat center;}
+  #headerWrap .mobileMenuBox nav .menu li:nth-child(10) h2 a::before{background: url(../images/common/icon10.svg)no-repeat center;}
+  #headerWrap .mobileMenuBox nav .menu li:nth-child(11) h2 a::before{background: url(../images/common/icon11.svg)no-repeat center;}
+  #headerWrap .mobileMenuBox nav .menu li:nth-child(12) h2 a::before{background: url(../images/common/icon12.svg)no-repeat center;}
+
   #headerWrap .mobileMenuBox .logoBox{margin:0 0 25px 25px;}
   #headerWrap .mobileMenuBox .logoBox h1 a{display: inline-block; padding: 0;}
   #headerWrap .mobileMenuBox .loginBox{padding: 0 25px; margin-top: 30px;justify-content: center;}
