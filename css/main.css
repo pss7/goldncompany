@@ -235,11 +235,8 @@
 }
 
 /* 장점 영역 */
-#advantageWrap{position: relative; padding: 120px 0 60px; z-index: 1; overflow: hidden;}
-#advantageWrap::after{content: ''; height: 1210px; position: absolute; top:0; left:0; right:0; background: url(../images/main/bg04.svg)no-repeat center top; z-index: -1;}
+#advantageWrap{position: relative; padding: 120px 0 60px; z-index: 1; overflow: hidden; background: url(../images/main/bg10.svg)no-repeat center;}
 #advantageWrap .advantageList{position: relative; display: flex; flex-wrap: wrap; gap: 20px;}
-#advantageWrap .advantageList::after{content: ''; width: 304px; height: 356px; position: absolute; top:-169px; right:-141px; background: url(../images/main/bg05.svg)no-repeat center;}
-#advantageWrap .advantageList::before{width: 247px; height: 287px; content: ''; position: absolute; left:-105px; bottom: -116px; background: url(../images/main/bg06.svg)no-repeat center;}
 #advantageWrap .advantageList .advantageBox{ flex: 1 1 auto; position: relative; width: 393px; height: 360px; border-radius: 15px; overflow: hidden; z-index: 1;}
 #advantageWrap .advantageList .advantageBox::after{content: ''; position: absolute; top:0; left:0; right: 0; bottom: 0; background: url(../images/main/bg03.svg)no-repeat center; background-size: cover; z-index: 9;}
 #advantageWrap .advantageList .advantageBox .textBox{position: absolute; left:30px; right: 20px; bottom: 30px; z-index: 99;}
