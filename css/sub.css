@@ -55,6 +55,7 @@
 
 /* 회사소개 */
 .companyIntroduceBox{margin-top: -50px;}
+.companyIntroduceBox .reviewBox{margin-bottom: 100px;}
 .companyIntroduceBox .revenueBox{padding: 0 0 60px;}
 .companyIntroduceBox .revenueBox h3{margin-bottom: 40px; color: #000; font-size: 40px; font-weight: 600; text-align: center; letter-spacing: -1px;}
 .companyIntroduceBox .revenueBox  .revenueList{display: flex; flex-wrap: wrap; gap: 20px 1.5%; }
@@ -115,7 +116,7 @@
 .companyIntroduceBox .companyIntroduceList03 .box:nth-child(4){background-color: #fdf5ff;}
 .companyIntroduceBox .companyIntroduceList03 .box:nth-child(4)::after{width: 200px; height: 200px; background: url(../images/sub/img09.png)no-repeat center; background-size: contain;}
 .companyIntroduceBox .introduceBox{padding: 100px 0;}
-.companyIntroduceBox .introduceBox h3{margin-bottom: 100px; text-align: center; font-family: 'GmarketSans'; font-size: 46px}
+.companyIntroduceBox .introduceBox h3{margin-bottom: 100px; text-align: center; font-family: 'GmarketSans'; font-size: 46px; word-break: keep-all;}
 .companyIntroduceBox .introduceBox h3 strong{color: #FF680D;}
 .companyIntroduceBox .introduceList{display: flex; gap: 0 4%;}
 .companyIntroduceBox .introduceList li{padding: 0 20px; position: relative; flex: 1; display: flex; align-items: center; justify-content: center; height: 300px; border-radius: 15px; background-color: #f9f9f9; text-align: center; box-shadow: 5px 5px 20px rgba(0, 0, 0, .1); word-break: keep-all;}
@@ -149,7 +150,7 @@
 .companyIntroduceBox .newsBox .titleBox{margin-bottom: 75px;}
 .companyIntroduceBox .newsBox .titleBox h3{text-align: center; font-family: 'GmarketSans';
     font-size: 46px; word-break: keep-all;}
-.companyIntroduceBox .newsBox .titleBox p{font-weight: 700; text-align: center; font-size: 30px;}
+.companyIntroduceBox .newsBox .titleBox p{font-weight: 700; text-align: center; font-size: 30px; word-break: keep-all;}
 .companyIntroduceBox .newsBox .titleBox p strong{color: #ff680d;}
 .companyIntroduceBox .newsBox .newsList{margin-bottom: 50px; display: flex; flex-wrap: wrap; gap: 20px 2%;}
 .companyIntroduceBox .newsBox .newsList li{width: 49%; padding: 25px 30px 18px; min-height: 130px; box-shadow: 0 10px 30px rgba(0, 0, 0, .1); border-radius: 20px; background-color: #fff9f9;}
@@ -327,10 +328,12 @@
   .companyIntroduceBox .historyBox{margin-bottom: 75px;}
   .companyIntroduceBox .historyBox .greetingsBox .signBox .box{flex-direction: column; gap: 10px 0; align-items: center; width: 100%;}
 
+  .companyIntroduceBox .reviewBox{margin-bottom: 90px;}
+
 }
 
 /* 후기 */
-.reviewBox h3{margin-bottom: 58px; font-size: 38px; font-family: 'GmarketSans';}
+.reviewBox h3{margin-bottom: 40px; font-size: 38px; font-family: 'GmarketSans';}
 .reviewBox h3 strong{color: #FF680D;}
 .reviewBox .rankingBox{margin-bottom: 100px;}
 .reviewBox .rankingBox .assetList{display: flex; gap: 0 19px;}
@@ -363,12 +366,11 @@
 .reviewBox .rankingBox .rankingList li:nth-child(2) em,
 .reviewBox .rankingBox .rankingList li:nth-child(3) em{color: #ff4a4e; }
 .reviewBox .rankingBox .slick-list{overflow: visible;}
-.reviewBox .youtubeList{display: flex; gap: 0 2%;}
-.reviewBox .youtubeList li{flex: 1;}
-.reviewBox .youtubeList li .videoBox{position: relative; margin-bottom: 20px; height: 0; padding-top: 60%; overflow: hidden; border-radius: 10px;}
-.reviewBox .youtubeList li .videoBox iframe{position: absolute; top:0; left:0; right:0; bottom: 0; width: 100%; height: 100%;}
-.reviewBox .youtubeList li h4{font-size: 20px; color: #333;}
-
+.youtubeList{display: flex; gap: 0 2%;}
+.youtubeList li{flex: 1;}
+.youtubeList li .videoBox{position: relative; margin-bottom: 20px; height: 0; padding-top: 60%; overflow: hidden; border-radius: 10px;}
+.youtubeList li .videoBox iframe{position: absolute; top:0; left:0; right:0; bottom: 0; width: 100%; height: 100%;}
+.youtubeList li h4{font-size: 20px; color: #333;}
 
 @media (max-width: 1199px){
 
@@ -384,9 +386,9 @@
 @media (max-width: 1024px){
 
   .reviewBox h3{margin-bottom: 40px; font-size: 30px;}
-  .reviewBox .youtubeList{flex-direction: column; gap: 50px 0;}
-  .reviewBox .youtubeList li .videoBox{margin-bottom: 15px;}
-  .reviewBox .youtubeList li h4{font-size: 18px;}
+  .youtubeList{flex-direction: column; gap: 50px 0;}
+  .youtubeList li .videoBox{margin-bottom: 15px;}
+  .youtubeList li h4{font-size: 18px;}
 
 }
 
@@ -400,7 +402,7 @@
 
 @media (max-width: 480px){
 
-  .reviewBox h3{font-size: 20px;}
+  .reviewBox h3{margin-bottom: 30px; font-size: 20px;}
 
 }
 
