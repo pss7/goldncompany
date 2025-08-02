@@ -170,12 +170,16 @@
 /* 후기 영역 */
 #reviewWrap{padding: 60px 0 120px;}
 #reviewWrap .reviewList{display: flex; gap: 0 20px;}
-#reviewWrap .reviewList .reviewBox a{display: block;}
+#reviewWrap .reviewBox{margin-bottom: 80px;}
+#reviewWrap .reviewBox:last-child{margin-bottom: 0;}
+#reviewWrap .reviewList .reviewBox{flex: 1; margin-bottom: 0;}
+#reviewWrap .reviewList .reviewBox a{display: block; border-radius: 20px; overflow: hidden;}
 #reviewWrap .reviewList .reviewBox a img{display: block; width: 100%;}
 
 @media (max-width: 1024px){
 
   #reviewWrap .reviewList{flex-direction: column; gap: 20px 0;}
+  #reviewWrap .reviewList .reviewBox a{border-radius: 10px;}
 
 }
 
@@ -184,6 +188,12 @@
   #reviewWrap .reviewList{margin: 0 -10px;}
   #reviewWrap .reviewList .reviewBox{margin: 0 10px;}
   #reviewWrap{padding: 30px 0 60px;}
+
+}
+
+@media (max-width: 480px){
+
+  #reviewWrap .slick-dots{margin-top: 14px;}
 
 }
 
