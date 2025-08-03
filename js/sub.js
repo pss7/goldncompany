@@ -25,22 +25,22 @@ $(function () {
 
   });
 
-  /*
-  $(".reviewBox .slick").slick({
-    variableWidth: true,
-    autoplay: false,
-    arrows: false,
-    dots: false,
-    accessibility: false,
-    draggable: true,
-    infinite: false,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    zIndex: 1000,
-    pauseOnHover: false,
-    autoplaySpeed: 5000,
-    speed: 1500,
+  $('.visionBox .coreValuesList_0602 > li a').click(function () {
+
+    if ($(this).parent().hasClass('active')) {
+      $('.visionBox .coreValuesTextBox_0604').slideUp();
+      $('.visionBox .coreValuesList_0602 > li').removeClass('active');
+    } else {
+      $('.visionBox .coreValuesTextBox_0604').hide();
+      $('.visionBox .coreValuesList_0602 > li').removeClass('active');
+      $(this).parent().addClass('active');
+      $(this).parent().find('.coreValuesTextBox_0604').slideDown();
+    }
+
+    return false;
+
+
   });
-  */
+
 
 });
