@@ -444,7 +444,7 @@
 .visionBox .coreValuesList_0602 > li:first-child{border-top: 1px solid #111;}
 .visionBox .coreValuesList_0602 > li:last-child{border-bottom: 1px solid #111;}
 .visionBox .coreValuesList_0602 > li a{position: relative; display: flex; flex-direction: column; justify-content: center; padding: 40px 120px 40px 160px; transition: all .5s;}
-.visionBox .coreValuesList_0602 > li a::after{content: ''; width: 22px; height: 13px; position: absolute; top:50%; transform: translateY(-50%); right:40px; background: url(../images/sub/arrow_icon01.svg)no-repeat center; background-size: contain; }  
+.visionBox .coreValuesList_0602 > li a::after{content: ''; width: 22px; height: 13px; position: absolute; top:50%; transform: translateY(-50%); right:40px; background: url(../images/sub/arrow_icon01.svg)no-repeat center; background-size: contain!important; }  
 .visionBox .coreValuesList_0602 > li.active{border-top: 1px solid #FE680D;}
 .visionBox .coreValuesList_0602 > li.active a::after{transform: translateY(-50%); background: url(../images/sub/arrow_icon02.svg)no-repeat center;}
 .visionBox .coreValuesList_0602 > li a::before{content: ''; left: 40px; width: 80px; height: 81px; position: absolute; top: 50%; transform: translateY(-50%); background: url(../images/sub/arrow_icon02.svg)no-repeat center; background-size: contain;}
@@ -533,8 +533,9 @@
 
   .visionBox .coreValuesList_0602 > li .coreValuesTextBox_0604{padding:20px;}
   .visionBox .coreValuesList_0602 > li a{padding: 101px 20px 35px;}
-  .visionBox .coreValuesList_0602 > li a::before{transform: none; top:28px; left: 25px;}
-  .visionBox .coreValuesList_0602 > li a::after{transform: none; top: 45px;}
+  .visionBox .coreValuesList_0602 > li a::before{transform: none; top:28px; left: 20px;}
+  .visionBox .coreValuesList_0602 > li a::after{transform: none; top: 45px; right: 20px;}
+  
 
 }
 
