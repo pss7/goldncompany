@@ -54,3 +54,11 @@
         url(fonts/GmarketSansBold.otf) format('opentype'),
 }
 
+@font-face {
+    font-family: 'SCDream';
+    font-style: normal;
+    font-weight: 500;
+    src: url(fonts/SCDream5.woff2) format('font-woff2'),
+        url(fonts/SCDream5.woff) format('woff'),
+        url(fonts/SCDream5.otf) format('opentype'),
+}
