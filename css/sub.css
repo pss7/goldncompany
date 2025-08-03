@@ -563,3 +563,9 @@
   .visionBox .sloganBox_0501 .sloganText_0503 br{display: none;}
 
 }
+
+@media (max-width: 414px){
+
+  .visionBox .topTitleBox_01 .topTitle_0102{padding: 70px 0 40px;}
+
+}
