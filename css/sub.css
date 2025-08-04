@@ -582,8 +582,10 @@
 .detailBox_01 .titleBox_01 .title_0102 span{display: block; margin-bottom: 8px; text-align: center; font-size: 24px; font-weight: 500; color: #fff;}
 .detailBox_01 .titleBox_01 .title_0102 h3{text-align: center; margin-bottom: 30px; color: #fff; font-size: 80px; font-weight: 700;}
 .detailBox_01 .titleBox_01 .title_0102 em{display: block; width: 236px; height: 48px; line-height: 48px; margin: 0 auto; border-radius: 8px; font-weight: 600; font-size: 20px; color: #fff; background-color: #222; text-align: center; letter-spacing: -1px;} 
-.detailBox_01 .titleBox_01 .titleInfoList_0103{display: flex; align-items: center; border-radius: 24px; overflow: hidden;}
+.detailBox_01 .titleBox_01 .titleInfoList_0103{display: flex; align-items: center; }
 .detailBox_01 .titleBox_01 .titleInfoList_0103 li{position: relative; display: flex; flex-direction: column; justify-content: center; flex:1; height: 183px; background-color: #fff;}
+.detailBox_01 .titleBox_01 .titleInfoList_0103 li:nth-child(1){border-radius: 24px 0 0 24px;}
+.detailBox_01 .titleBox_01 .titleInfoList_0103 li:nth-child(3){border-radius: 0 24px 24px 0;}
 .detailBox_01 .titleBox_01 .titleInfoList_0103 li::after{content: ''; position: absolute; top:53px; right:1px; width: 1px; height: 83px; background-color: #ddd;} 
 .detailBox_01 .titleBox_01 .titleInfoList_0103 li:last-child:after{display: none;}
 .detailBox_01 .titleBox_01 .titleInfoList_0103 li span{margin-bottom: 10px; display: block; font-size: 20px; font-weight: 600; color: #222; text-align: center;}
@@ -640,7 +642,8 @@
   .detailBox_01 .titleBox_01 .title_0102 em{width: 210px; font-size: 16px;}
   .detailBox_01 .titleBox_01 .titleInfoList_0103 li{height: 164px;}
   .detailBox_01 .titleBox_01 .titleInfoList_0103 li span{font-size: 18px;}
-  .detailBox_01 .titleBox_01 .titleInfoList_0103{border-radius: 15px;}
+  .detailBox_01 .titleBox_01 .titleInfoList_0103 li:nth-child(1){border-radius: 15px 0 0 15px;}
+  .detailBox_01 .titleBox_01 .titleInfoList_0103 li:nth-child(3){border-radius: 0 15px 15px 0;}
   .detailBox_01 .titleBox_01 .titleInfoList_0103 li strong{font-size: 24px;}
   .detailBox_01 .infoBox_02{margin-bottom: 68px;}
   .detailBox_01 .infoBox_02 h3{font-size: 30px;}
@@ -679,8 +682,8 @@
   .detailBox_01 .titleBox_01 .title_0102{margin-bottom: 80px;}
   .detailBox_01 .titleBox_01 .title_0102 span{font-size: 16px;}
   .detailBox_01 .titleBox_01 .title_0102 h3{font-size: 38px;}
-  .detailBox_01 .titleBox_01 .titleInfoList_0103{flex-direction: column; gap: 10px 0; border-radius: 0;}
-  .detailBox_01 .titleBox_01 .titleInfoList_0103 li{padding: 20px 10px; width: 100%; height: auto; border-radius: 10px;}
+  .detailBox_01 .titleBox_01 .titleInfoList_0103{flex-direction: column; gap: 10px 0;}
+  .detailBox_01 .titleBox_01 .titleInfoList_0103 li{padding: 20px 10px; width: 100%; height: auto; border-radius: 10px!important;}
   .detailBox_01 .titleBox_01 .titleInfoList_0103 li::after{display: none;}
   .detailBox_01 .infoBox_02{margin-bottom: 40px;}
   .detailBox_01 .infoBox_02 h3{font-size: 24px;}
