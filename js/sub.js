@@ -1,5 +1,6 @@
 $(function () {
 
+  //상단
   $(window).load(function () {
     AOS.init({
       duration: 2000
@@ -7,6 +8,7 @@ $(function () {
     $('.subTitleBox .subVisualBox').addClass('active');
   });
 
+  //회사소개 탭
   $('.companyIntroduceListBox .textView').click(function () {
     if ($(this).hasClass('active')) {
       $(this).removeClass('active');
@@ -25,6 +27,7 @@ $(function () {
 
   });
 
+  //비전 탭
   $('.visionBox .coreValuesList_0602 > li a').click(function () {
 
     if ($(this).parent().hasClass('active')) {
@@ -39,8 +42,16 @@ $(function () {
 
     return false;
 
-
   });
 
+  //모달
+  $('.detail_btn').click(function () {
+    $('.productModalWrap').addClass('active');
+    $('.detail_btn02').addClass('active');
+  })
+  $('.productModalCloseBtn').click(function () {
+    $('.productModalWrap').removeClass('active');
+    $('.detail_btn02').removeClass('active');
+  })
 
 });
